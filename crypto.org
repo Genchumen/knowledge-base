@@ -1,0 +1,45 @@
+#+TITLE: Cryptography
+#+AUTHOR: Sawyer Shepherd
+#+DATE: 2021-06-28
+#+STARTUP: latexpreview
+
+* Diffie-Hellman Key Exchange
+  Diffie-Hellman key exchange is a way of securely exchanging cryptographic keys
+  over an insecure channel.
+
+* Cryptosystems
+** Okamoto-Uchiyama
+   The Okamoto-Uchiyama cryptosystem is a homomorphic and malleable public key cryptosystem.
+   1. Choose random primes $p$ and $q$
+   2. Compute $n=p^2q$
+   3. Choose $g\in\{2\ldots n-1\}$ such that $g^{p-1} \not\equiv 1\bmod p^2$
+   4. Compute $h=g^n\bmod n$
+*** Encryption
+    1. Choose message $m<p$
+    2. Chose integer $r\in\{1\ldots n-1\}$ at random
+    3. Compute ciphertext $c=g^mh^r\bmod n$
+*** Decryption
+    1. Define $L(x)=\frac{x-1}{p}$
+    2. $m=\frac{L(c^{p-1}\bmod p^2)}{L(g^{p-1}\bmod p^2)}\bmod p$
+
+** Rivest-Shamir-Adleman (RSA)
+   1. Choose random primes $p$ and $q$
+   2. Compute $n=pq$
+   3. Compute [[Euler's Totient Function][Euler's totient]] of $n$, $\varphi(n)=(p-1)(q-1)$
+   4. Choose $e$ such that $1<e<\varphi(n)$
+   5. Compute $d$ such that $de \bmod \varphi(n)=1$
+   6. Choose message $m$
+   7. Compute ciphertext $c=m^e \bmod n$
+   8. $m=c^d \bmod n$
+
+* Functions
+** Euler's Totient Function
+   * A.k.a Euler's phi function
+   Written as $\varphi(n)$ or $\phi(n)$, Euler's totient function returns the number of
+   positive integers less than $n$ that are [[Greatest Common Divisor][relatively prime]] to $n$.
+
+   $\varphi(n)$ is the number of $k\in\mathbb{N}$ such that $1\le k < n$ and $gcd(k,n)=1$.
+
+** Greatest Common Divisor
+   Written as $gcd(x,y)$, the greatest common divisor of two or more integers is
+   the largest positive integer that divides each of the integers.
