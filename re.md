@@ -1,0 +1,3 @@
+```{=org}
+#+STARTUP: latex preview
+```

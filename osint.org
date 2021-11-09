@@ -1,2 +1,0 @@
-#+TITLE: Open-Source Intelligence
-#+STARTUP: latexpreview
