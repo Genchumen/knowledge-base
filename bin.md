@@ -1,3 +1,3 @@
-```{=org}
-#+STARTUP: latexpreview
-```
+---
+title: Binary Inspection
+---
