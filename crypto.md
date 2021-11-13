@@ -1,6 +1,6 @@
-```{=org}
-#+STARTUP: latexpreview
-```
+---
+title: Cryptography
+---
 # Public-Key Cryptosystems
 
 ## Okamoto-Uchiyama

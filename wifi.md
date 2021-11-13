@@ -1,6 +1,6 @@
-```{=org}
-#+STARTUP: latexpreview
-```
+---
+title: Network/wifi
+---
 # Wired Equivalent Privacy
 
 WEP uses the [Rivest Cipher 4](crypto.org::*RC4) algorithm for packet

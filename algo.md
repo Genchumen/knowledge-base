@@ -1,9 +1,9 @@
-```{=org}
-#+STARTUP: latexpreview
-```
+---
+title: Algorithms
+---
 # Modulo Function
 
--   Written as $\%$ or $\mod$
+-   Written as % or $\mod x$
 
 The modulo function is the equivalent of taking the remainder of two
 numbers.

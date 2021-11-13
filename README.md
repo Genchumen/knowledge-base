@@ -1,3 +1,6 @@
+---
+title: About
+---
 # The Genchumen Knowledge-Base
 
 This project seeks to serve as a source for quick information to aid in
