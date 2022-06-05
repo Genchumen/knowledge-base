@@ -15,6 +15,7 @@ make CTF'ing just a little easier.
 * moreutils
 * nmap
 * openssl
+* rr
 * sherlock
 * sonic-visualizer
 * stegsnow
